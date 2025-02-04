@@ -1,0 +1,33 @@
+<!-- <p>call-center works!</p> -->
+<div>
+  <h2>Call Center</h2>
+
+  <label for="navigation">Navigate to:</label>
+  <select id="navigation" (change)="navigate($event)">
+    <option value="case">Case</option>
+    <option value="opportunity">Opportunities</option>
+    <option value="quote">Quote</option>
+    <option value="service-appointments">Service Appointments</option>
+    <option value="vendor-service-appointments">Vendor Service Appointments</option>
+  </select>
+
+
+
+
+  <!-- <div class="drag-container">
+    <h5>Drag and Drop Pages:</h5>
+    <div cdkDropList (cdkDropListDropped)="drop($event)" class="list-group">
+      <div
+        *ngFor="let page of pages"
+        cdkDrag
+        class="list-group-item list-group-item-action"
+        (click)="navigateToPage(page)"
+      >
+        {{ page }}
+      </div>
+    </div>
+  </div> -->
+  <router-outlet></router-outlet> <!-- Ensure this is placed correctly -->
+</div>
+
+

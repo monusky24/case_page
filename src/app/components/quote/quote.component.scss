@@ -1,0 +1,25 @@
+/* quotes.component.css */
+.clickable {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .clickable:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+  }
+  
+  .clickable:active {
+    transform: scale(0.98);
+    background-color: #e0e0e0;
+  }
+  
+  .btn.clickable:hover {
+      color: white; /* Example for primary button */
+  }
+  .btn-secondary.clickable:hover {
+      color: white; /* Example for secondary button */
+  }
+  .btn-light.clickable:hover {
+      color: black; /* Example for light button */
+  }

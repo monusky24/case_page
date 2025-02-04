@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-items-center mb-3">
+          <h5 class="card-title mr-2">Opportunities</h5>
+          <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle border" type="button" id="closedLostDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Closed Lost
+            </button>
+            <div class="dropdown-menu" aria-labelledby="closedLostDropdown">
+              <a class="dropdown-item" href="#">Option 1</a>
+              <a class="dropdown-item" href="#">Option 2</a>
+              <a class="dropdown-item" href="#">Option 3</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <input type="text" class="form-control clickable" placeholder="Opportunity Name">
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control clickable" placeholder="Account">
+          </div>
+          <div class="col-md-3">
+            <select class="form-control clickable">
+              <option selected>Select Stage</option>
+              </select>
+          </div>
+          <div class="col-md-3">
+            <select class="form-control clickable">
+              <option selected>Select Forecast Category</option>
+              </select>
+          </div>
+        </div>
+  
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <input type="text" class="form-control clickable" placeholder="Owner">
+          </div>
+          <div class="col-md-3">
+            <input type="date" class="form-control clickable">
+          </div>
+          <div class="col-md-3 d-flex align-items-center">
+            <button class="btn btn-primary clickable mr-2" (click)="onButtonClick('Search')">Search</button>
+            <button class="btn btn-secondary clickable" (click)="onButtonClick('Reset')">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

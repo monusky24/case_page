@@ -1,0 +1,29 @@
+/* case.component.css */
+.clickable {
+  cursor: pointer; /* Changes the mouse cursor to a pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.clickable:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  transform: scale(1.02); /* Slightly scale up on hover for a subtle effect */
+}
+
+.clickable:active {
+    transform: scale(0.98); /* Slightly scale down on click */
+    background-color: #e0e0e0; /* A darker gray background when clicked */
+}
+
+/* Optional: Add specific hover effects for buttons */
+.btn.clickable:hover {
+    background-color: #0069d9;
+    color: white; /* Example for primary button */
+}
+.btn-secondary.clickable:hover {
+    background-color: #5a6268;
+    color: white; /* Example for secondary button */
+}
+.btn-light.clickable:hover {
+    background-color: #e2e6ea;
+    color: black; /* Example for light button */
+}
